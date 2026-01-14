@@ -6,18 +6,13 @@
     <title>Rede Marquesa - Planilhas</title>
 
     <style>
-        :root {
-            --whatsapp-verde: #25D366;
-            --whatsapp-hover: #1ebe5d;
-        }
-
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
             background: linear-gradient(135deg, #b30000, #7a0000);
             color: #ffffff;
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -28,46 +23,19 @@
             background-color: rgba(0, 0, 0, 0.35);
             padding: 40px 30px;
             border-radius: 12px;
-            max-width: 900px;
-            width: 95%;
+            max-width: 420px;
+            width: 90%;
         }
 
         h1 {
-            margin-bottom: 10px;
-            font-size: 28px;
+            margin-bottom: 15px;
+            font-size: 26px;
         }
 
         p {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             font-size: 16px;
             opacity: 0.9;
-        }
-
-        /* 📸 GALERIA DE IMAGENS */
-        .galeria {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 14px;
-            margin-bottom: 30px;
-        }
-
-        .galeria img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 10px;
-            background-color: rgba(255,255,255,0.15);
-        }
-
-        /* 📱 MOBILE */
-        @media (max-width: 768px) {
-            .galeria {
-                grid-template-columns: 1fr;
-            }
-
-            .galeria img {
-                height: 200px;
-            }
         }
 
         .btn {
@@ -121,41 +89,33 @@
         .dev {
             margin-top: 15px;
             font-size: 11px;
-            opacity: 0.7;
+            opacity: 0.6;
         }
 
-        /* 🔰 WHATSAPP PADRÃO */
-        .whatsapp {
-            display: inline-block;
-            margin-top: 6px;
-            padding: 6px 14px;
-            font-size: 11px;
-            color: #ffffff;
-            text-decoration: none;
-            background-color: var(--whatsapp-verde);
-            border-radius: 20px;
-            transition: 0.3s;
-        }
+        .dev a {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 6px 14px;
+    font-size: 11px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #25D366;
+    border-radius: 20px;
+    transition: 0.3s;
+}
 
-        .whatsapp:hover {
-            background-color: var(--whatsapp-hover);
-        }
+.dev a:hover {
+    background-color: #1ebe5d;
+}
+
     </style>
 </head>
 
 <body>
     <div class="container">
         <h1>Rede Marquesa</h1>
-        <p>Painel de acesso rápido às planilhas de controle</p>
+        <p>Acesso rápido às planilhas de controle</p>
 
-        <!-- 🖼️ IMAGENS -->
-        <div class="galeria">
-            <img src="img/imagem1.jpg" alt="Controle e organização">
-            <img src="img/imagem2.jpg" alt="Gestão de lojas">
-            <img src="img/imagem3.jpg" alt="Análise de dados">
-        </div>
-
-        <!-- 🔘 BOTÕES -->
         <a class="btn" 
            href="https://docs.google.com/spreadsheets/d/1Lv870v0-02LEDRerRwRizcXTPU-7hC3t_ZiRGPEYk9A/edit?usp=drivesdk" 
            target="_blank">
@@ -186,7 +146,7 @@
 
         <div class="dev">
             Desenvolvido por Marcos Lima Duarte<br>
-            <a class="whatsapp" href="https://wa.me/5511945047842" target="_blank">
+            <a href="https://wa.me/5511945047842" target="_blank">
                 WhatsApp: (11) 94504-7842
             </a>
         </div>
